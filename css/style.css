@@ -1,0 +1,291 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: 10rem;
+    width: 100%;
+}
+
+.cabecalho_principal {
+    height: 100%;
+    width: 100%;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+}
+
+.cabecalho_img {
+    height: 100%;
+    width: 40%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cabecalho_img a {
+    display: flex;
+    border-radius: 50%;
+}
+
+.cabecalho_img img {
+    height: 100%;
+    width: 15rem;
+    background-color: white;
+}
+
+.cabecalho_icones {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: end;
+}
+
+.cabecalho_icones img {
+    height: 100%;
+    width: 80px;
+    margin: 0 2rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.cabecalho_icones div {
+    background-color: transparent;
+}
+
+.invisivel{
+    display: all;
+}
+
+/* ******************************************** */
+
+.bloco-principal {
+    height: 1320px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.bloco-topo {
+    height: 412px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quadrado-esquerdo {
+    height: 100%;
+    width: 77.5%;
+    background: url('https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F210715112230-06-ras-abu-aboud-stadium.jpg') no-repeat center;
+    background-size: cover;
+    background-position-y: 0rem;
+}
+
+.quadrado-direito {
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.retangulo-topo-quadrado-direito, .retangulo-baixo-quadrado-direito {
+    height: 47.5%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.retangulo-topo-quadrado-direito {
+    background: url('https://cloudinary.fifa.com/api/v3/picture/flags-sq-4/MAR?tx=c_fill,g_auto,q_auto') no-repeat center;
+    background-size: cover;
+}
+
+.retangulo-baixo-quadrado-direito {
+    background: url('https://cloudinary.fifa.com/api/v3/picture/flags-sq-4/CRO?tx=c_fill,g_auto,q_auto') no-repeat center;
+    background-size: cover;
+}
+
+/* ******************************************** */
+
+.bloco-base {
+    margin-top: 2rem;
+    height: 764px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.retangulo-principal-esquerdo {
+    height: 100%;
+    width: 18%;
+    background: url('https://img.freepik.com/fotos-premium/homem-de-jogador-de-futebol-asiatico-segurando-a-bola-no-meio_9083-3483.jpg?w=2000') no-repeat center;
+    background-size: cover;
+}
+
+.retangulo-principal-direito {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bloco-texto {
+    height: 20%;
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+.bloco-texto p {
+    text-align: justify;
+    margin: 0.5rem 0;
+}
+
+.bloco-conteudo {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coluna {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bloco-1, .bloco-2 {
+    height: 49%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.coluna img {
+    height: 70%;
+    width: 100%;
+}
+
+.coluna p {
+    height: 30%;
+    text-align: justify;
+    margin: 0 0.5rem;
+    background-color: transparent;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    
+    .invisivel {
+        display: none;
+    }
+
+    header {
+        height: 6rem;
+    }
+
+    .cabecalho_img img {
+        width: 10rem;
+    }
+
+    .cabecalho_icones img {
+        width: 60px;
+    }
+
+    /* ******************************************** */
+
+    .bloco-topo {
+        flex-direction: column;
+    }
+
+    .quadrado-esquerdo {
+        height: 65%;
+        width: 100%;
+    }
+    
+    .quadrado-direito {
+        height: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .retangulo-topo-quadrado-direito, .retangulo-baixo-quadrado-direito {
+        height: 100%;
+        width: 47.5%;
+    }
+
+    /* ******************************************** */
+
+    .bloco-base {
+        height: 1005;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .retangulo-principal-direito {
+        width: 100%;
+    }
+    
+    .bloco-texto {
+        height: 20%;
+        width: 100%;
+    }
+    
+    .bloco-conteudo {
+        height: 75%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .coluna {
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .coluna p {
+        height: 20rem;
+    }
+    
+    .bloco-1, .bloco-2 {
+        height: 60%;
+        width: 47.5%;
+    }
+
+    
+}
